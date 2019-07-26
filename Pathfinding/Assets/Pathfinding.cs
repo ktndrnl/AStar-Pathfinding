@@ -59,7 +59,8 @@ public class Pathfinding : MonoBehaviour
             			continue;
             		}
     
-            		int newMovementCostToNeighbor = currentNode.gCost + GetDistance(currentNode, neighbor);
+            		int newMovementCostToNeighbor = currentNode.gCost + GetDistance(currentNode, neighbor) + 
+						neighbor.movementPenalty;
             		if (newMovementCostToNeighbor < neighbor.gCost || !openSet.Contains(neighbor))
             		{
             			neighbor.gCost = newMovementCostToNeighbor;
@@ -69,6 +70,10 @@ public class Pathfinding : MonoBehaviour
             			{
             				openSet.Add(neighbor);
             			}
+						else
+						{
+							openSet.UpdateItem(neighbor);
+						}
             		}
             	}
             }
@@ -110,7 +115,7 @@ public class Pathfinding : MonoBehaviour
 			Vector2 directionNew = new Vector2(path[i - 1].gridX - path[i].gridX, path[i - 1].gridY - path[i].gridY);
 			if (directionNew != directionOld)
 			{
-				waypoints.Add(path[i].worldPosition);
+				waypoints.Add(path[i-1].worldPosition);
 			}
 
 			directionOld = directionNew;

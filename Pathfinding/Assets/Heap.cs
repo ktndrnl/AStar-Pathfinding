@@ -31,7 +31,7 @@ public class Heap<T> where T : IHeapItem<T>
 		return firstItem;
 	}
 
-	public void UpdateItems(T item)
+	public void UpdateItem(T item)
 	{
 		SortUp(item);
 	}
