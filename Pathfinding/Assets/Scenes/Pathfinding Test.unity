@@ -407,7 +407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &200580860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,6 +424,7 @@ MonoBehaviour:
   speed: 20
   turnSpeed: 3
   turnDst: 5
+  stoppingDst: 10
 --- !u!136 &200580861
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -794,6 +795,7 @@ MonoBehaviour:
   speed: 20
   turnSpeed: 3
   turnDst: 5
+  stoppingDst: 10
 --- !u!1 &585701594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1692591083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1488,6 +1490,7 @@ MonoBehaviour:
   speed: 20
   turnSpeed: 3
   turnDst: 5
+  stoppingDst: 10
 --- !u!136 &1692591084
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1580,7 +1583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1814571644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,6 +1600,7 @@ MonoBehaviour:
   speed: 20
   turnSpeed: 3
   turnDst: 5
+  stoppingDst: 10
 --- !u!136 &1814571645
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1780,7 +1784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2082094956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,6 +1801,7 @@ MonoBehaviour:
   speed: 20
   turnSpeed: 3
   turnDst: 5
+  stoppingDst: 10
 --- !u!136 &2082094957
 CapsuleCollider:
   m_ObjectHideFlags: 0
