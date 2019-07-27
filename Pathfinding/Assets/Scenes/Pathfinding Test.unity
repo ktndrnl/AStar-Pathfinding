@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f70c1af8022c823438f3655c13e82db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayGridGizmos: 1
+  displayGridGizmos: 0
   unwalkableMask:
     serializedVersion: 2
     m_Bits: 256
@@ -271,6 +271,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1024
     terrainPenalty: 5
+  obstacleProximityPenalty: 10
 --- !u!114 &182995035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,7 +407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &200580860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +421,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 186167400}
+  speed: 20
+  turnSpeed: 3
+  turnDst: 5
 --- !u!136 &200580861
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -787,6 +791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 186167400}
+  speed: 20
+  turnSpeed: 3
+  turnDst: 5
 --- !u!1 &585701594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,7 +1471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1692591083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,6 +1485,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 186167400}
+  speed: 20
+  turnSpeed: 3
+  turnDst: 5
 --- !u!136 &1692591084
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1570,7 +1580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1814571644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,6 +1594,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 186167400}
+  speed: 20
+  turnSpeed: 3
+  turnDst: 5
 --- !u!136 &1814571645
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1767,7 +1780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2082094956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1781,6 +1794,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 186167400}
+  speed: 20
+  turnSpeed: 3
+  turnDst: 5
 --- !u!136 &2082094957
 CapsuleCollider:
   m_ObjectHideFlags: 0
